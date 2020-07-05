@@ -6,20 +6,7 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedScenePath-0:
-      value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d
-      flags: 0
-    RecentlyUsedScenePath-1:
-      value: 224247031146464f283d386c052d56040f
-      flags: 0
-    RecentlyUsedScenePath-2:
-<<<<<<< refs/remotes/SphereGame/master
-      value: 22424703114646680e0b02275f134d1f02180c333c2d6924081a297df7ee3d2cfb
-      flags: 0
-    RecentlyUsedScenePath-3:
-      value: 22424703114646680e0b02275f134d1f02180c333c2d691d2c2d192aa2d4312bf6ee38eea92f31352d1b
-=======
-      value: 22424703114646680e0b02275f134d1f02180c333c2d691b2c251831a2d4312bf6a923e7ee2e26
->>>>>>> Character
+      value: 22424703114646680e0b02275f134d1f02180c333c2d691d2c2d192aadcd353ce6fe76dde2292b353705a1290a371526
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
