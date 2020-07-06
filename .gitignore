@@ -51,3 +51,7 @@ Library/SceneVisibilityState.asset
 Library/ScriptMapper
 
 Library/
+
+UserSettings/EditorUserSettings.asset
+
+*.asset

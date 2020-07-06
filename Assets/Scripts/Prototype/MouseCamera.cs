@@ -25,7 +25,12 @@ public class MouseCamera : MonoBehaviour
     public LayerMask bodyMask;
     public MeshRenderer bodyRender;
 
+    public LayerMask fPerson;
+    public LayerMask tPerson;
+
     bool isFirstPerson;
+    bool isCurrentFP;
+    bool isCurrentTP;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +42,8 @@ public class MouseCamera : MonoBehaviour
     void Update()
     {
         isFirstPerson = Physics.CheckSphere(bodyCheck.position, bodyDistance, bodyMask);
+        isCurrentFP = Physics.CheckSphere(transform.position, bodyDistance, tPerson);
+        isCurrentTP = Physics.CheckSphere(transform.position, bodyDistance, fPerson);
 
         if (isFirstPerson)
         {
@@ -56,13 +63,13 @@ public class MouseCamera : MonoBehaviour
 
         playerBody.Rotate(Vector3.up * mouseX);
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (isCurrentFP)
         {
             cameraChanging = true;
             //for third person
         }
 
-        if (Input.GetKeyDown(KeyCode.L))
+        if (isCurrentTP)
         {
             cameraChanging = false;
             //for first person
