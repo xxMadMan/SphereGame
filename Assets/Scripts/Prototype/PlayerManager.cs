@@ -16,5 +16,23 @@ public class PlayerManager : MonoBehaviour
     #endregion
 
     public GameObject player;
+    bool isCursorLocked = true;
 
+    void LateUpdate()
+    {
+        if (Input.GetButtonDown("Inventory"))
+        {
+            if (isCursorLocked)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                isCursorLocked = !isCursorLocked;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                isCursorLocked = !isCursorLocked;
+            }
+        }
+
+    }
 }

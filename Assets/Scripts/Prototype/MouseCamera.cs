@@ -76,6 +76,7 @@ public class MouseCamera : MonoBehaviour
         }
 
         CameraChange();
+
     }
 
     void CameraChange()
