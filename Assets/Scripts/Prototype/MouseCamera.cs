@@ -16,7 +16,6 @@ public class MouseCamera : MonoBehaviour
     public Transform playerBody;
 
     float xRotation = 0f;
-    float smoothSpeed = 0.125f;
 
     bool cameraChanging = false;
 
