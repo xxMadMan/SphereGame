@@ -13,7 +13,7 @@ public class EquipmentManager : MonoBehaviour
 
     #endregion
 
-    public GameObject targetObj;
+    public GameObject headPos;
     Equipment[] currentEquipment;
     GameObject[] currentObj;
 
@@ -51,8 +51,9 @@ public class EquipmentManager : MonoBehaviour
 
         currentEquipment[slotIndex] = newItem;
         GameObject newObj = Instantiate<GameObject>(newItem.equipmentObj);
-        newObj.transform.parent = targetObj.transform;
-        newObj.transform.position = targetObj.transform.position;
+        newObj.transform.parent = headPos.transform;
+        newObj.transform.position = headPos.transform.position;
+        newObj.transform.rotation = headPos.transform.rotation;
 
         currentObj[slotIndex] = newObj;
     }

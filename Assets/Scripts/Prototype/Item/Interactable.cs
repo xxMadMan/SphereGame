@@ -7,26 +7,27 @@ public class Interactable : MonoBehaviour
 
     bool hasInteracted = false;
 
+
     void Start()
     {
-        player = PlayerManager.instance.player.transform;
+        //player = PlayerManager.instance.player.transform;
     }
 
     public virtual void Interact()
     {
         //this method is meant to be overwritten
-        Debug.Log("Interacting with " + transform.name);
+        //Debug.Log("Interacting with " + transform.name);
+        
     }
 
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.E))
+        
+        if (Input.GetMouseButton(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 4))
+            if (Physics.Raycast(ray, out hit, 3) && hit.transform.gameObject.layer == LayerMask.NameToLayer("Interactable"))
             {
                 float distance = Vector3.Distance(player.position, transform.position);
                 if (distance <= radius && !hasInteracted)
@@ -41,8 +42,17 @@ public class Interactable : MonoBehaviour
                 }
             }
         }
+
+        if (player == null)
+        {
+            player = PlayerManager.instance.player.transform;
+        }
     }
 
+    public void AttackingReset()
+    {
+        hasInteracted = false;
+    }
 
     void OnDrawGizmosSelected()
     {
