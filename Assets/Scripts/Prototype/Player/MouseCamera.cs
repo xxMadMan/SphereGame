@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MouseCamera : MonoBehaviour
 {
@@ -9,7 +7,7 @@ public class MouseCamera : MonoBehaviour
     public GameObject fPos;
     public GameObject tPos;
     public float flowSpeed;
-    float rotLimit = 90f;
+    float rotLimit = 75f; // this is set for firstperson starts off
 
     public float mouseSensitivity = 100f;
 
@@ -56,7 +54,7 @@ public class MouseCamera : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -rotLimit, rotLimit);
+        xRotation = Mathf.Clamp(xRotation, -rotLimit - 20f, rotLimit);
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
@@ -76,6 +74,8 @@ public class MouseCamera : MonoBehaviour
 
         CameraChange();
 
+        
+
     }
 
     void CameraChange()
@@ -88,7 +88,7 @@ public class MouseCamera : MonoBehaviour
         else if (cameraChanging == true) 
         {
             camPos.transform.position = Vector3.MoveTowards(camPos.transform.position, tPos.transform.position, Time.deltaTime * flowSpeed);
-            rotLimit = 20f;
+            rotLimit = 40f;
         }
     }
 }
