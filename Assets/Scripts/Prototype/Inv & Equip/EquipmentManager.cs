@@ -13,7 +13,7 @@ public class EquipmentManager : MonoBehaviour
 
     #endregion
 
-    public GameObject headPos;
+    public GameObject headPos, weaponPos; // add shieldPos
     Equipment[] currentEquipment;
     GameObject[] currentObj;
 
@@ -49,13 +49,37 @@ public class EquipmentManager : MonoBehaviour
             onEquipmentChanged.Invoke(newItem, oldItem);
         }
 
-        currentEquipment[slotIndex] = newItem;
-        GameObject newObj = Instantiate<GameObject>(newItem.equipmentObj);
-        newObj.transform.parent = headPos.transform;
-        newObj.transform.position = headPos.transform.position;
-        newObj.transform.rotation = headPos.transform.rotation;
+        switch (slotIndex)
+        {
+            case 0:
+                currentEquipment[slotIndex] = newItem;
+                GameObject newHandObj = Instantiate<GameObject>(newItem.equipmentObj);
+                newHandObj.transform.parent = headPos.transform;
+                newHandObj.transform.position = headPos.transform.position;
+                newHandObj.transform.rotation = headPos.transform.rotation;
+                currentObj[slotIndex] = newHandObj;
+                break;
+            case 1:
+                currentEquipment[slotIndex] = newItem;
+                GameObject newWeaponObj = Instantiate<GameObject>(newItem.equipmentObj);
+                newWeaponObj.transform.parent = weaponPos.transform;
+                newWeaponObj.transform.position = weaponPos.transform.position;
+                newWeaponObj.transform.rotation = weaponPos.transform.rotation;
+                currentObj[slotIndex] = newWeaponObj;
+                break;
+            //case 2:   //Add this back for sheild
+            //    currentEquipment[slotIndex] = newItem;
+            //    GameObject newShieldObj = Instantiate<GameObject>(newItem.equipmentObj);
+            //    newShieldObj.transform.parent = shieldPos.transform;
+            //    newShieldObj.transform.position = shieldPos.transform.position;
+            //    newShieldObj.transform.rotation = shieldPos.transform.rotation;
+            //    currentObj[slotIndex] = newShieldObj;
+            //    break;
+            default:
+                print("slot index default was called");
+                break;
 
-        currentObj[slotIndex] = newObj;
+        }
     }
 
     public void Unequip (int slotIndex)

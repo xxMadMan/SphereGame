@@ -16,12 +16,14 @@ public class PlayerStats : CharacterStats
         {
             armour.AddModifier(newItem.armourModifier);
             damage.AddModifier(newItem.damageModifier);
+            health.AddModifier(newItem.healthModifier);
         }
 
         if (oldItem != null)
         {
             armour.RemoveModifier(oldItem.armourModifier);
             damage.RemoveModifier(oldItem.damageModifier);
+            health.RemoveModifier(oldItem.healthModifier);
         }
     }
 

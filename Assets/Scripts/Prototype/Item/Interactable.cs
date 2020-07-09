@@ -27,7 +27,7 @@ public class Interactable : MonoBehaviour
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 10) && hit.transform.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+            if (Physics.Raycast(ray, out hit, 4) && hit.transform.gameObject.layer == LayerMask.NameToLayer("Interactable"))
             {
                 float distance = Vector3.Distance(player.position, transform.position);
                 if (distance <= radius && !hasInteracted)
