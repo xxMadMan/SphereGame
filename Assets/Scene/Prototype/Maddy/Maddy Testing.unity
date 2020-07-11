@@ -789,6 +789,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222594672}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &226965335 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7053468211096408558, guid: 75ff5b1b13f67794c852a3cf8fa4906d, type: 3}
+  m_PrefabInstance: {fileID: 806571972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &237987704
 GameObject:
   m_ObjectHideFlags: 0
@@ -2546,7 +2551,7 @@ PrefabInstance:
     - target: {fileID: 7053468212756185435, guid: 75ff5b1b13f67794c852a3cf8fa4906d, type: 3}
       propertyPath: bodyCheck
       value: 
-      objectReference: {fileID: 1216463923}
+      objectReference: {fileID: 1252173764}
     - target: {fileID: 7053468212756185435, guid: 75ff5b1b13f67794c852a3cf8fa4906d, type: 3}
       propertyPath: bodyMask.m_Bits
       value: 1024
@@ -3909,11 +3914,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184658246}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1216463923 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7053468212116033702, guid: 75ff5b1b13f67794c852a3cf8fa4906d, type: 3}
-  m_PrefabInstance: {fileID: 806571972}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1216463925 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7053468212116033703, guid: 75ff5b1b13f67794c852a3cf8fa4906d, type: 3}
@@ -4014,6 +4014,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219771146}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1252173764 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7053468212774500012, guid: 75ff5b1b13f67794c852a3cf8fa4906d, type: 3}
+  m_PrefabInstance: {fileID: 806571972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1255043621
 GameObject:
   m_ObjectHideFlags: 0
@@ -5075,6 +5080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HelmOfDoom
       objectReference: {fileID: 0}
+    - target: {fileID: 6312814862335667231, guid: 10d05e7ff08b68147b6b5b3c81d140f3, type: 3}
+      propertyPath: radius
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10d05e7ff08b68147b6b5b3c81d140f3, type: 3}
 --- !u!1 &1541753037
@@ -5284,6 +5293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HelmOfMoron
       objectReference: {fileID: 0}
+    - target: {fileID: 8307377876773945161, guid: 52afdc685c45f39498e4edfee843853a, type: 3}
+      propertyPath: radius
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52afdc685c45f39498e4edfee843853a, type: 3}
 --- !u!1 &1582256247 stripped
@@ -5303,6 +5316,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 987212989042852210, guid: fc8e7c8eb60327f49860d790e02bdef4, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 987212989042852210, guid: fc8e7c8eb60327f49860d790e02bdef4, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 226965335}
+    - target: {fileID: 987212989042852210, guid: fc8e7c8eb60327f49860d790e02bdef4, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 987212989042852211, guid: fc8e7c8eb60327f49860d790e02bdef4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5386,6 +5411,22 @@ PrefabInstance:
     - target: {fileID: 987212989042852211, guid: fc8e7c8eb60327f49860d790e02bdef4, type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 987212989042852212, guid: fc8e7c8eb60327f49860d790e02bdef4, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 987212989042852212, guid: fc8e7c8eb60327f49860d790e02bdef4, type: 3}
+      propertyPath: m_IgnoreReversedGraphics
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 987212989042852213, guid: fc8e7c8eb60327f49860d790e02bdef4, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 987212989042852213, guid: fc8e7c8eb60327f49860d790e02bdef4, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 987212989042852215, guid: fc8e7c8eb60327f49860d790e02bdef4, type: 3}
       propertyPath: m_Name
@@ -10521,6 +10562,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2812447822214220101, guid: a9bef84f06b74984c848ad5a7f5fac76, type: 3}
+      propertyPath: radius
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2812447822214220102, guid: a9bef84f06b74984c848ad5a7f5fac76, type: 3}
       propertyPath: damage.baseValue
       value: 5
@@ -10528,6 +10573,10 @@ PrefabInstance:
     - target: {fileID: 2812447822214220109, guid: a9bef84f06b74984c848ad5a7f5fac76, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812447822214220111, guid: a9bef84f06b74984c848ad5a7f5fac76, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9bef84f06b74984c848ad5a7f5fac76, type: 3}

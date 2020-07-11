@@ -115,5 +115,13 @@ public class EquipmentManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.U))
             UnequipAll();
+
+        if (Input.GetKeyDown(KeyCode.E) && Cursor.lockState == CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        } else if (Input.GetKeyDown(KeyCode.E) && Cursor.lockState == CursorLockMode.None)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 }
