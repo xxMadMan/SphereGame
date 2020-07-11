@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: f904f1ad6c1b34048b076dd54a20c9ad, type: 2}
 --- !u!1 &5514519
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,8 +139,8 @@ GameObject:
   m_Name: fence (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5514520
 Transform:
@@ -520,8 +520,8 @@ GameObject:
   m_Name: fence (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &138947967
 Transform:
@@ -615,8 +615,8 @@ GameObject:
   m_Name: fence (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &201000362
 Transform:
@@ -710,8 +710,8 @@ GameObject:
   m_Name: house5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &222594673
 Transform:
@@ -822,7 +822,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 3
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 1fd49dfbc28c85446b25dd9cc0567760, type: 2}
+  sharedProfile: {fileID: 0}
 --- !u!4 &237987706
 Transform:
   m_ObjectHideFlags: 0
@@ -1148,8 +1148,8 @@ GameObject:
   m_Name: fence (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &351321877
 Transform:
@@ -1243,8 +1243,8 @@ GameObject:
   m_Name: house16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &358194300
 Transform:
@@ -1338,8 +1338,8 @@ GameObject:
   m_Name: house1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &387242980
 Transform:
@@ -1433,8 +1433,8 @@ GameObject:
   m_Name: fence (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &387799757
 Transform:
@@ -1559,7 +1559,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 03509da9b1c686741aedd5fdbd1f5bfb, type: 2}
+  sharedProfile: {fileID: 0}
 --- !u!1 &424751176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1671,8 +1671,8 @@ GameObject:
   m_Name: fence (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &449605865
 Transform:
@@ -1823,8 +1823,8 @@ GameObject:
   m_Name: fence (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &536131703
 Transform:
@@ -1918,8 +1918,8 @@ GameObject:
   m_Name: house20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &536365221
 Transform:
@@ -2013,8 +2013,8 @@ GameObject:
   m_Name: house14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &551033885
 Transform:
@@ -2108,8 +2108,8 @@ GameObject:
   m_Name: fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &575214821
 BoxCollider:
@@ -2203,8 +2203,8 @@ GameObject:
   m_Name: house6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &608042257
 Transform:
@@ -2298,8 +2298,8 @@ GameObject:
   m_Name: fence (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &737884874
 Transform:
@@ -2393,8 +2393,8 @@ GameObject:
   m_Name: fence (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &791077704
 Transform:
@@ -2527,6 +2527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8349447582199446312, guid: 75ff5b1b13f67794c852a3cf8fa4906d, type: 3}
+      propertyPath: playerHealthUI
+      value: 
+      objectReference: {fileID: 1585989699}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75ff5b1b13f67794c852a3cf8fa4906d, type: 3}
 --- !u!1 &827016699
@@ -2545,8 +2549,8 @@ GameObject:
   m_Name: fence (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &827016700
 Transform:
@@ -2636,12 +2640,12 @@ GameObject:
   - component: {fileID: 851165103}
   - component: {fileID: 851165102}
   - component: {fileID: 851165101}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &851165101
 BoxCollider:
@@ -2735,8 +2739,8 @@ GameObject:
   m_Name: fence (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &854943504
 Transform:
@@ -2830,8 +2834,8 @@ GameObject:
   m_Name: fence (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &884071174
 Transform:
@@ -2925,8 +2929,8 @@ GameObject:
   m_Name: house
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &890476864
 BoxCollider:
@@ -3020,8 +3024,8 @@ GameObject:
   m_Name: fence (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &910460455
 Transform:
@@ -3115,8 +3119,8 @@ GameObject:
   m_Name: house13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &959347610
 Transform:
@@ -3210,8 +3214,8 @@ GameObject:
   m_Name: house18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &971981595
 Transform:
@@ -3305,8 +3309,8 @@ GameObject:
   m_Name: fence (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1024376728
 Transform:
@@ -3495,8 +3499,8 @@ GameObject:
   m_Name: house15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1090393007
 Transform:
@@ -3590,8 +3594,8 @@ GameObject:
   m_Name: fence (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1137461113
 Transform:
@@ -3685,8 +3689,8 @@ GameObject:
   m_Name: fence (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1180690351
 Transform:
@@ -3780,8 +3784,8 @@ GameObject:
   m_Name: fence (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1184658247
 Transform:
@@ -3875,8 +3879,8 @@ GameObject:
   m_Name: house8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1219771147
 Transform:
@@ -4063,8 +4067,8 @@ GameObject:
   m_Name: house4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1282857550
 Transform:
@@ -4158,8 +4162,8 @@ GameObject:
   m_Name: house2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1304557138
 Transform:
@@ -4253,8 +4257,8 @@ GameObject:
   m_Name: fence (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1312004758
 Transform:
@@ -4348,8 +4352,8 @@ GameObject:
   m_Name: fence (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1318468349
 Transform:
@@ -4443,8 +4447,8 @@ GameObject:
   m_Name: house17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1319666704
 Transform:
@@ -4538,8 +4542,8 @@ GameObject:
   m_Name: fence (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1337755815
 Transform:
@@ -4633,8 +4637,8 @@ GameObject:
   m_Name: fence (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1356266897
 Transform:
@@ -4786,8 +4790,8 @@ GameObject:
   m_Name: house11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1467475141
 Transform:
@@ -4881,8 +4885,8 @@ GameObject:
   m_Name: fence (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1478877803
 Transform:
@@ -4976,8 +4980,8 @@ GameObject:
   m_Name: fence (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1541753038
 Transform:
@@ -5055,6 +5059,16 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541753037}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1582256247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7053468210800207569, guid: 75ff5b1b13f67794c852a3cf8fa4906d, type: 3}
+  m_PrefabInstance: {fileID: 806571972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1585989699 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 620738942236717970, guid: fc8e7c8eb60327f49860d790e02bdef4, type: 3}
+  m_PrefabInstance: {fileID: 1629446002}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1629446002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9981,8 +9995,8 @@ GameObject:
   m_Name: fence (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1712708342
 Transform:
@@ -10067,6 +10081,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1194736109519163876, guid: 3f05c7d62da60bf4cbc04cb60f904eb4, type: 3}
+      propertyPath: headPos
+      value: 
+      objectReference: {fileID: 2025586017}
+    - target: {fileID: 1194736109519163876, guid: 3f05c7d62da60bf4cbc04cb60f904eb4, type: 3}
+      propertyPath: weaponPos
+      value: 
+      objectReference: {fileID: 1582256247}
     - target: {fileID: 1194736109519163878, guid: 3f05c7d62da60bf4cbc04cb60f904eb4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10115,6 +10137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1194736109519163881, guid: 3f05c7d62da60bf4cbc04cb60f904eb4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1837362241}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f05c7d62da60bf4cbc04cb60f904eb4, type: 3}
 --- !u!1 &1812990661
@@ -10133,8 +10159,8 @@ GameObject:
   m_Name: house7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1812990662
 Transform:
@@ -10212,6 +10238,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812990661}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1837362241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7053468211701589166, guid: 75ff5b1b13f67794c852a3cf8fa4906d, type: 3}
+  m_PrefabInstance: {fileID: 806571972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1863691020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10263,6 +10294,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2812447822214220102, guid: a9bef84f06b74984c848ad5a7f5fac76, type: 3}
+      propertyPath: damage.baseValue
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2812447822214220109, guid: a9bef84f06b74984c848ad5a7f5fac76, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -10285,8 +10320,8 @@ GameObject:
   m_Name: fence (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1875339198
 Transform:
@@ -10380,8 +10415,8 @@ GameObject:
   m_Name: house10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1899070274
 Transform:
@@ -10570,8 +10605,8 @@ GameObject:
   m_Name: house19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1971608169
 Transform:
@@ -10665,8 +10700,8 @@ GameObject:
   m_Name: fence (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2009983721
 Transform:
@@ -10744,6 +10779,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009983720}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2025586017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2252039478885925446, guid: 75ff5b1b13f67794c852a3cf8fa4906d, type: 3}
+  m_PrefabInstance: {fileID: 806571972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2033760569
 GameObject:
   m_ObjectHideFlags: 0
@@ -10760,8 +10800,8 @@ GameObject:
   m_Name: fence (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2033760570
 Transform:
@@ -10855,8 +10895,8 @@ GameObject:
   m_Name: house9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2039838988
 Transform:
@@ -11047,8 +11087,8 @@ GameObject:
   m_Name: house12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2130916847
 Transform:
