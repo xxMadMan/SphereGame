@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1099108957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1099108958}
+  m_Layer: 13
+  m_Name: HealthUIPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1099108958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099108957}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2812447822214220099}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2812447822214220109
 GameObject:
   m_ObjectHideFlags: 0
@@ -18,6 +48,7 @@ GameObject:
   - component: {fileID: 2812447822214220101}
   - component: {fileID: 2812447822214220102}
   - component: {fileID: 2812447822214220103}
+  - component: {fileID: 1465765625}
   m_Layer: 13
   m_Name: Enemy
   m_TagString: Untagged
@@ -37,6 +68,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2812447822527010093}
+  - {fileID: 1099108958}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -167,6 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 3
+  interactiveTransform: {fileID: 2812447822214220099}
 --- !u!114 &2812447822214220102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +217,8 @@ MonoBehaviour:
     baseValue: 0
   armour:
     baseValue: 1
+  health:
+    baseValue: 0
 --- !u!114 &2812447822214220103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,6 +233,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSpeed: 1
   attackDelay: 0.6
+--- !u!114 &1465765625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812447822214220109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e4b3b4d3059e14dbdad8a140095a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiPrefab: {fileID: 373242676936727216, guid: bcc45b7ebb040c740b963e45624e2e2b, type: 3}
+  target: {fileID: 1099108958}
 --- !u!1 &2812447822527010089
 GameObject:
   m_ObjectHideFlags: 0

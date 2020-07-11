@@ -29,7 +29,7 @@ public class Interactable : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 4) && hit.transform.gameObject.layer == LayerMask.NameToLayer("Interactable"))
             {
-                float distance = Vector3.Distance(player.position, transform.position);
+                float distance = Vector3.Distance(player.position, gameObject.transform.position);
                 if (distance <= radius && !hasInteracted)
                 {
                     Interact();
