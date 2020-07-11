@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8307377876773945159}
   - component: {fileID: 8307377876773945158}
   - component: {fileID: 8307377876773945161}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: HelmOfMoron
   m_TagString: Untagged
   m_Icon: {fileID: 0}

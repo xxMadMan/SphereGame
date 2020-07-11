@@ -19,3 +19,4 @@ MonoBehaviour:
   equipmentObj: {fileID: 6312814862335667230, guid: 0b86e870cf9ee0a48af47d2ef7ed70da, type: 3}
   armourModifier: 3
   damageModifier: 2
+  healthModifier: 0

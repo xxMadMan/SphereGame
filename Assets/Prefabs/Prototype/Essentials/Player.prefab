@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &62131557542794582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 655050578518552861}
+  m_Layer: 13
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &655050578518552861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62131557542794582}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.7500002, z: -2.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7053468212756185434}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2252039478885925446
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +234,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7053468212756185434}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &7053468211096408558
 Camera:
@@ -795,6 +825,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 655050578518552861}
   - {fileID: 7053468211096408559}
   m_Father: {fileID: 7053468211701589160}
   m_RootOrder: 0
@@ -811,9 +842,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc121539a43437439fd7f2227f8d1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camPos: {fileID: 7053468211096408556}
+  fPos: {fileID: 0}
+  tPos: {fileID: 0}
+  flowSpeed: 0
   rotLimit: 50
   mouseSensitivity: 80
   playerBody: {fileID: 7053468211701589160}
+  bodyCheck: {fileID: 0}
+  bodyDistance: 0.4
+  bodyMask:
+    serializedVersion: 2
+    m_Bits: 0
+  bodyRender: {fileID: 0}
+  fPerson:
+    serializedVersion: 2
+    m_Bits: 0
+  tPerson:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &7053468212774500003
 GameObject:
   m_ObjectHideFlags: 0

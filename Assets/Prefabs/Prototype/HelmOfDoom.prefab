@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6312814862335667217}
   - component: {fileID: 6312814862335667216}
   - component: {fileID: 6312814862335667231}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: HelmOfDoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
