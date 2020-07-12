@@ -17,7 +17,7 @@ public class MouseCamera : MonoBehaviour
 
     bool cameraChanging = false;
 
-    public Transform bodyCheck;
+    public Transform camToBodyCheck;
     public float bodyDistance = 0.4f;
     public LayerMask bodyMask;
     public MeshRenderer bodyRender;
@@ -25,7 +25,7 @@ public class MouseCamera : MonoBehaviour
     public LayerMask fPerson;
     public LayerMask tPerson;
 
-    bool isFirstPerson = true;
+    bool isFirstPerson;
     bool isCurrentFP;
     bool isCurrentTP;
 
@@ -38,7 +38,7 @@ public class MouseCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isFirstPerson = Physics.CheckSphere(bodyCheck.position, bodyDistance, bodyMask);
+        isFirstPerson = Physics.CheckSphere(camToBodyCheck.position, bodyDistance, bodyMask);
         isCurrentFP = Physics.CheckSphere(transform.position, bodyDistance, tPerson);
         isCurrentTP = Physics.CheckSphere(transform.position, bodyDistance, fPerson);
 
