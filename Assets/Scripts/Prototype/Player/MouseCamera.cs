@@ -25,7 +25,7 @@ public class MouseCamera : MonoBehaviour
     public LayerMask fPerson;
     public LayerMask tPerson;
 
-    bool isFirstPerson;
+    bool isFirstPerson = true;
     bool isCurrentFP;
     bool isCurrentTP;
 

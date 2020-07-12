@@ -843,24 +843,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camPos: {fileID: 7053468211096408556}
-  fPos: {fileID: 0}
-  tPos: {fileID: 0}
+  fPos: {fileID: 7053468212756185433}
+  tPos: {fileID: 62131557542794582}
   flowSpeed: 0
   rotLimit: 50
   mouseSensitivity: 80
   playerBody: {fileID: 7053468211701589160}
-  bodyCheck: {fileID: 0}
+  bodyCheck: {fileID: 7053468212774500012}
   bodyDistance: 0.4
   bodyMask:
     serializedVersion: 2
-    m_Bits: 0
-  bodyRender: {fileID: 0}
+    m_Bits: 1024
+  bodyRender: {fileID: 7053468212116033703}
   fPerson:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4096
   tPerson:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
 --- !u!1 &7053468212774500003
 GameObject:
   m_ObjectHideFlags: 0
