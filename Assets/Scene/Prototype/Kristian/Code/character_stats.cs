@@ -19,8 +19,6 @@ public class character_stats : MonoBehaviour
         name = StatsTest.name;
         level = StatsTest.level;
         hp = StatsTest.hp;
-
-        Debug.Log(StatsTest.name);
     }
 }
 
