@@ -9,6 +9,7 @@ public class character_stats : MonoBehaviour
     public Object jsonFile;
 
     public string name;
+    public int level;
     public int hp;
     
     void Start()
@@ -16,6 +17,7 @@ public class character_stats : MonoBehaviour
         Test StatsTest = JsonUtility.FromJson<Test>(jsonFile.ToString());
         
         name = StatsTest.name;
+        level = StatsTest.level;
         hp = StatsTest.hp;
 
         Debug.Log(StatsTest.name);
@@ -26,5 +28,6 @@ public class character_stats : MonoBehaviour
 public class Test
 {
     public string name;
+    public int level;
     public int hp;
 }
