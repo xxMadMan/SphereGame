@@ -5,12 +5,14 @@ using UnityEngine;
 //we derive (this).cs from the base class CharacterStats.cs
 public class PlayerStats : CharacterStats
 {
+    Animator anim;
     
     void Start()
     {
         //We use the EquipmentManager.cs instance method .onEquipmentChanged and subscribe it to
         //our own method from within this script OnEquipmentChanged;
         EquipmentManager.instance.onEquipmentChanged += OnEquipmentChanged;
+        anim = GetComponent<Animator>();
     }
 
     //this is gonna take in a piece of Equipment called newItem, and oldItem
@@ -45,6 +47,11 @@ public class PlayerStats : CharacterStats
     public override void Die()
     {
         base.Die();
+        anim.SetInteger("Condition", 3);
+    }
+
+    public void DeathReset()
+    {
         //call the PlayerManager.cs instance, using the KillPlayer method
         PlayerManager.instance.KillPlayer();
     }

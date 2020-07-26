@@ -53,13 +53,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049673923095030373}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.41, y: -0.32999998, z: 0.57}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.4100001, y: -0.32999998, z: 0.5699997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7909033654353558787}
-  m_Father: {fileID: 2812447822214220099}
-  m_RootOrder: 2
+  m_Father: {fileID: 3167181106796947114}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2812447822214220109
 GameObject:
@@ -80,6 +80,7 @@ GameObject:
   - component: {fileID: 2812447822214220102}
   - component: {fileID: 2812447822214220103}
   - component: {fileID: 1465765625}
+  - component: {fileID: 7700236704370990797}
   m_Layer: 13
   m_Name: Enemy
   m_TagString: Untagged
@@ -100,7 +101,7 @@ Transform:
   m_Children:
   - {fileID: 1099108958}
   - {fileID: 6940139567890416329}
-  - {fileID: 4024230895846560238}
+  - {fileID: 3167181106796947114}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -278,6 +279,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiPrefab: {fileID: 373242676936727216, guid: bcc45b7ebb040c740b963e45624e2e2b, type: 3}
   target: {fileID: 1099108958}
+--- !u!95 &7700236704370990797
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812447822214220109}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb5db9c63a7649d40b01c54cfee51462, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2812447822527010089
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +569,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &7717922896408240583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3167181106796947114}
+  m_Layer: 13
+  m_Name: HandAnim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3167181106796947114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7717922896408240583}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4024230895846560238}
+  m_Father: {fileID: 2812447822214220099}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7980920275807811506
 GameObject:
   m_ObjectHideFlags: 0

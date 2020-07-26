@@ -31,7 +31,7 @@ public class Interactable : MonoBehaviour
             RaycastHit hit;
 
             // if the ray hits
-            if (Physics.Raycast(ray, out hit, 10) && hit.transform.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+            if (Physics.Raycast(ray, out hit, 3) && hit.transform.gameObject.layer == LayerMask.NameToLayer("Interactable"))
             {
                 //here we have a new variable distance set = to
                 //player.position between hit.transform.gameObj.etc
@@ -58,11 +58,6 @@ public class Interactable : MonoBehaviour
             //the start methord
             player = PlayerManager.instance.player.transform;
         }
-    }
-
-    public void AttackingReset()
-    {
-        hasInteracted = false;
     }
 
     //draws the radius you can interact with the item

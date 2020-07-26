@@ -5,48 +5,35 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterStats))]
 public class CharacterCombat : MonoBehaviour
 {
-    public float attackSpeed = 1f;
-    private float attackCooldown = 0f;
+    #region Singleton
+    public static CharacterCombat instance;
 
-    public float attackDelay = .6f;
+    void Awake()
+    {
+        instance = this;
+    }
+    #endregion
 
     //public event System.Action OnAttack;
 
     CharacterStats myStats;
-    Interactable attReset;
+    public CharacterStats opponentStats;
 
     void Start()
     {
         myStats = GetComponent<CharacterStats>();
-        if (gameObject.tag != "Player")
-            attReset = GetComponent<Interactable>();
-    }
-
-    void Update()
-    {
-        attackCooldown -= Time.deltaTime;
     }
 
     public void Attack(CharacterStats targetStats)
     {
-        if (attackCooldown <= 0f)
-        {
-            StartCoroutine(DoDamage(targetStats, attackDelay));
-
-            //if (OnAttack != null)
-            //    OnAttack();
-
-            attackCooldown = 1f / attackSpeed;
-
-            if (attReset != null)
-                attReset.AttackingReset();
-        }
+        opponentStats = targetStats.GetComponent<CharacterStats>();
     }
 
-    IEnumerator DoDamage(CharacterStats stats, float delay)
-    {
-        yield return new WaitForSeconds(delay);
 
-        stats.TakeDamage(myStats.damage.GetValue());
+
+    public void AttackHit_Event()
+    {
+        if (opponentStats != null)
+            opponentStats.TakeDamage(myStats.damage.GetValue());
     }
 }

@@ -15,6 +15,13 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    Animator anim;
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     Vector3 velocity;
     bool isGrounded;
 
@@ -34,6 +41,16 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
+
+        if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+        {
+            anim.SetInteger("Condition", 1);
+        } else if (Input.GetButtonUp("Horizontal") || Input.GetButtonUp("Vertical"))
+        {
+            anim.SetInteger("Condition", 0);
+        }
+
+        
 
         if (Input.GetButtonDown("Jump") && isGrounded){
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);

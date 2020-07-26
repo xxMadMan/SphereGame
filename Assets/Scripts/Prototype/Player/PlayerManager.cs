@@ -25,11 +25,13 @@ public class PlayerManager : MonoBehaviour
         {
             if (isCursorLocked)
             {
+                player.GetComponent<PlayerAnimation>().inventoryOpen = true;
                 Cursor.lockState = CursorLockMode.None;
                 isCursorLocked = !isCursorLocked;
             }
             else
             {
+                player.GetComponent<PlayerAnimation>().inventoryOpen = false;
                 Cursor.lockState = CursorLockMode.Locked;
                 isCursorLocked = !isCursorLocked;
             }

@@ -20,6 +20,7 @@ public class CharacterStats : MonoBehaviour
 
     public event System.Action<int, int> OnHealthChanged;
 
+
     void Awake()
     {
         //here we can set the health but cannot do that from any other script
@@ -36,7 +37,7 @@ public class CharacterStats : MonoBehaviour
     //    }
     //}
 
-    
+
     public void TakeDamage(int damage)
     {
         //here we are taking the armour stat from the Stat.cs value and doing a small cal.
